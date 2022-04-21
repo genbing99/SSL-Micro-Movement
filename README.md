@@ -38,9 +38,13 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
 
 ## Additional Notes
 
-If you have issues downloading the files Composite_dataset.pkl (~166MB) and imigue_dataset.pkl (~660MB) due to large file size, you can download the files here:
+1. If you have issue installing torch, run this:
   
-Composite_dataset.pkl : https://drive.google.com/file/d/1apjtx2hNdBiRuOXAiJDs7uCVcB2GUT9a/view?usp=sharing <br>
-imigue_dataset.pkl : https://drive.google.com/file/d/1_iBbrc19fd4-UWlOpVpQzXGRcAI_f2z0/view?usp=sharing
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ``` pip install torch===1.5.0 torchvision===0.6.0 torchsummary==1.5.1 -f https://download.pytorch.org/whl/torch_stable.html ```
+  
+2. If you have issues downloading the files Composite_dataset.pkl (~166MB) and imigue_dataset.pkl (~660MB) due to large file size, you can download the files here:
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Composite_dataset.pkl : https://drive.google.com/file/d/1apjtx2hNdBiRuOXAiJDs7uCVcB2GUT9a/view?usp=sharing <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; imigue_dataset.pkl : https://drive.google.com/file/d/1_iBbrc19fd4-UWlOpVpQzXGRcAI_f2z0/view?usp=sharing
   
 ##### Please email me at genbing67@gmail.com if you have any inquiries or issues.
