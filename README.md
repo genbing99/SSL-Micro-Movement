@@ -38,4 +38,9 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
 
 ## Additional Notes
 
+If you have issues downloading the files Composite_dataset.pkl (~166MB) and imigue_dataset.pkl (~660MB) due to large file size, you can download the files here:
+  
+Composite_dataset.pkl : https://drive.google.com/file/d/1apjtx2hNdBiRuOXAiJDs7uCVcB2GUT9a/view?usp=sharing <br>
+imigue_dataset.pkl : https://drive.google.com/file/d/1_iBbrc19fd4-UWlOpVpQzXGRcAI_f2z0/view?usp=sharing
+  
 ##### Please email me at genbing67@gmail.com if you have any inquiries or issues.
