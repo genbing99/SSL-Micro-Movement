@@ -22,7 +22,7 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
 &nbsp;&nbsp;&nbsp; --train_model (True/False)
 
 ## If you wish to re-train the self-supervised approach
-<b>Step 1)</b> Download pre-train dataset from : (Please request from the author at the moment)
+<b>Step 1)</b> Download pre-train dataset from : (please request from the author at the moment)
   
 <!--
 https://drive.google.com/file/d/13MKvf6q3Yq1dq7OnyYBZOAaM5R1sKznk/view?usp=sharing
@@ -48,5 +48,7 @@ If you have issue installing torch, run this: <br>
 If you have issues downloading the files Composite_dataset.pkl (~166MB) and imigue_dataset.pkl (~660MB) due to large file size, you can download the files here: <br>
 Composite_dataset.pkl : https://drive.google.com/file/d/1apjtx2hNdBiRuOXAiJDs7uCVcB2GUT9a/view?usp=sharing <br>
 imigue_dataset.pkl : https://drive.google.com/file/d/1_iBbrc19fd4-UWlOpVpQzXGRcAI_f2z0/view?usp=sharing
+  
+ The weights for all networks are hidden at the moment (please request from the author at the moment)
   
 ##### Please email me at genbing67@gmail.com if you have any inquiries or issues.
