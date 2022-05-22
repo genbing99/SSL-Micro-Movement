@@ -14,12 +14,16 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
 
 &nbsp; ``` python me_main.py ```
 
+#### &nbsp;&nbsp;&nbsp; For parameter settings <br>
+&nbsp;&nbsp;&nbsp;&nbsp; --dataset_name (Composite/MMEW) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; --train_model (True/False)
+  
 &nbsp; <b>2b.</b> Micro-Gesture Recognition
 
 &nbsp; ``` python mg_main.py ```
 
-#### &nbsp;&nbsp; Note for parameter settings <br>
-&nbsp;&nbsp;&nbsp; --train_model (True/False)
+#### &nbsp;&nbsp;&nbsp; For parameter settings <br>
+&nbsp;&nbsp;&nbsp;&nbsp; --train_model (True/False)
 
 ## If you wish to re-train the self-supervised approach
 <b>Step 1)</b> Download pre-train dataset from : (please request from the author at the moment)
