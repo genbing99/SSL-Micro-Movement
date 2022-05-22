@@ -30,9 +30,9 @@ class LightWeight_Network(nn.Module):
         out = self.classifier(out)
         return out
 
-class LightWeight_Network_Recog(nn.Module): # With 2 + 1 Conv
-    def __init__(self, num_classes=3, pretext_epoch=100):
-        super(LightWeight_Network_Recog, self).__init__()
+class LightWeight_Network_Spot(nn.Module): # With 2 + 1 Conv
+    def __init__(self, num_classes=1, pretext_epoch=10):
+        super(LightWeight_Network_Spot, self).__init__()
         model = LightWeight_Network()
 
         def conv_block(in_filters, out_filters, stride, normalize):
@@ -53,7 +53,8 @@ class LightWeight_Network_Recog(nn.Module): # With 2 + 1 Conv
         self.classifier = nn.Sequential(
             *conv_block(32, 64, 2, True),
             nn.Flatten(),
-            nn.Linear(in_features=3136, out_features=num_classes)
+            nn.Linear(in_features=3136, out_features=32),
+            nn.Linear(in_features=32, out_features=num_classes)
         )
 
     def forward(self, x):

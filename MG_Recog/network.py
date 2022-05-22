@@ -36,7 +36,6 @@ class LightWeight_Network_Recog(nn.Module): # With 2 + 1 Conv
         model = LightWeight_Network()
 
         def conv_block(in_filters, out_filters, stride, normalize):
-            """Returns layers of each discriminator block"""
             layers = [nn.Conv2d(in_filters, out_filters, 3, stride, 1)]
             if normalize:
                 layers.append(nn.InstanceNorm2d(out_filters))
