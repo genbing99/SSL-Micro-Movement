@@ -25,6 +25,14 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
 #### &nbsp;&nbsp;&nbsp; For parameter settings <br>
 &nbsp;&nbsp;&nbsp;&nbsp; --train_model (True/False)
 
+&nbsp; <b>2c.</b> Micro-Expression Spotting
+
+&nbsp; ``` python me_spot_main.py ```
+
+#### &nbsp;&nbsp;&nbsp; For parameter settings <br>
+&nbsp;&nbsp;&nbsp;&nbsp; --dataset_name (CASME_sq/SAMMLV) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; --train_model (True/False)
+  
 ## If you wish to re-train the self-supervised approach
 <b>Step 1)</b> Download pre-train dataset from : (please request from the author at the moment)
   
