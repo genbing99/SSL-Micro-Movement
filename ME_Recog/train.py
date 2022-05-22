@@ -14,9 +14,9 @@ from ME_Recog.network import *
 from ME_Recog.dataloader import *
 from ME_Recog.evaluation import *
 
-def train(X, Y, final_subjects, groupsLabel, epochs=200, lr_features=0.000005, lr_classifier=0.00005, batch_size=256, pretext_epoch=10, train_model=False):
+def train(X, Y, final_subjects, groupsLabel, dataset_name, epochs=200, lr_features=0.000005, lr_classifier=0.00005, batch_size=256, pretext_epoch=10, train_model=False):
     # Create model directory
-    os.makedirs("ME_Recog_Weights", exist_ok=True)
+    os.makedirs("ME_Recog_Weights_" + dataset_name, exist_ok=True)
         
     # For LOSO
     loso = LeaveOneGroupOut()
@@ -51,7 +51,7 @@ def train(X, Y, final_subjects, groupsLabel, epochs=200, lr_features=0.000005, l
     start_time_sec = time.time()
         
     # Write final result to final_result.txt
-    final_result = open("ME_Recog_Weights/final_result.txt", "w")
+    final_result = open("ME_Recog_Weights_" + dataset_name + "/final_result.txt", "w")
 
     for subject_count in range(len(final_subjects)): 
         
@@ -133,11 +133,11 @@ def train(X, Y, final_subjects, groupsLabel, epochs=200, lr_features=0.000005, l
                     print('Epoch %3d/%3d, train loss: %5.4f, train acc: %5.4f, val loss: %5.4f, val acc: %5.4f' % (epoch, epochs, train_loss, train_acc, val_loss, val_acc))
 
                 # Save models
-                torch.save(model.state_dict(), os.path.join("ME_Recog_Weights/subject_%s.pkl" % (str(final_subjects[subject_count]))))
+                torch.save(model.state_dict(), os.path.join("ME_Recog_Weights_%s/subject_%s.pkl" % (dataset_name, str(final_subjects[subject_count]))))
 
         # Load model and test performance
         else: 
-            model.load_state_dict(torch.load("ME_Recog_Weights/subject_%s.pkl" % (str(final_subjects[subject_count]))))
+            model.load_state_dict(torch.load("ME_Recog_Weights_%s/subject_%s.pkl" % (dataset_name, str(final_subjects[subject_count]))))
             model.eval()
             for batch in test_dl:
                 x    = batch[0].to(device)
