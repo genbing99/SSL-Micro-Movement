@@ -12,7 +12,7 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
 
 &nbsp; <b>2a.</b> Micro-Expression Recognition
 
-&nbsp; ``` python me_main.py ```
+&nbsp; ``` python me_recog_main.py ```
 
 #### &nbsp;&nbsp;&nbsp; For parameter settings <br>
 &nbsp;&nbsp;&nbsp;&nbsp; --dataset_name (Composite/MMEW) <br>
@@ -20,7 +20,7 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
   
 &nbsp; <b>2b.</b> Micro-Gesture Recognition
 
-&nbsp; ``` python mg_main.py ```
+&nbsp; ``` python mg_recog_main.py ```
 
 #### &nbsp;&nbsp;&nbsp; For parameter settings <br>
 &nbsp;&nbsp;&nbsp;&nbsp; --train_model (True/False)
