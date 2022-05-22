@@ -14,16 +14,24 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
 
 &nbsp; ``` python me_main.py ```
 
+#### &nbsp;&nbsp;&nbsp; For parameter settings <br>
+&nbsp;&nbsp;&nbsp;&nbsp; --dataset_name (Composite/MMEW) <br>
+&nbsp;&nbsp;&nbsp;&nbsp; --train_model (True/False)
+  
 &nbsp; <b>2b.</b> Micro-Gesture Recognition
 
 &nbsp; ``` python mg_main.py ```
 
-#### &nbsp;&nbsp; Note for parameter settings <br>
-&nbsp;&nbsp;&nbsp; --train_model (True/False)
+#### &nbsp;&nbsp;&nbsp; For parameter settings <br>
+&nbsp;&nbsp;&nbsp;&nbsp; --train_model (True/False)
 
 ## If you wish to re-train the self-supervised approach
-<b>Step 1)</b> Download pre-train dataset from : https://drive.google.com/file/d/13MKvf6q3Yq1dq7OnyYBZOAaM5R1sKznk/view?usp=sharing
-
+<b>Step 1)</b> Download pre-train dataset from : (please request from the author at the moment)
+  
+<!--
+https://drive.google.com/file/d/13MKvf6q3Yq1dq7OnyYBZOAaM5R1sKznk/view?usp=sharing
+-->
+  
 <b>Step 2)</b> Place the folder (CASME_sq) accordingly:
   
 >├─CASME_sq <br>
@@ -40,9 +48,11 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
 
 If you have issue installing torch, run this: <br>
 ``` pip install torch===1.5.0 torchvision===0.6.0 torchsummary==1.5.1 -f https://download.pytorch.org/whl/torch_stable.html ```
-  
+
 If you have issues downloading the files Composite_dataset.pkl (~166MB) and imigue_dataset.pkl (~660MB) due to large file size, you can download the files here: <br>
 Composite_dataset.pkl : https://drive.google.com/file/d/1apjtx2hNdBiRuOXAiJDs7uCVcB2GUT9a/view?usp=sharing <br>
 imigue_dataset.pkl : https://drive.google.com/file/d/1_iBbrc19fd4-UWlOpVpQzXGRcAI_f2z0/view?usp=sharing
+  
+ The weights for all networks are hidden at the moment (please request from the author at the moment)
   
 ##### Please email me at genbing67@gmail.com if you have any inquiries or issues.
