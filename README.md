@@ -61,6 +61,6 @@ If you have issues downloading the files Composite_dataset.pkl (~166MB) and imig
 Composite_dataset.pkl : https://drive.google.com/file/d/1apjtx2hNdBiRuOXAiJDs7uCVcB2GUT9a/view?usp=sharing <br>
 imigue_dataset.pkl : https://drive.google.com/file/d/1_iBbrc19fd4-UWlOpVpQzXGRcAI_f2z0/view?usp=sharing
   
- The weights for all networks are hidden at the moment (please request from the author at the moment)
+ The weights for all networks are hidden (please request from the author at the moment)
   
 ##### Please email me at genbing67@gmail.com if you have any inquiries or issues.
