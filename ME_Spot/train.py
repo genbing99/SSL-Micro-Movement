@@ -76,26 +76,27 @@ def train(X, Y, groupsLabel, dataset, k, dataset_name, final_subjects, final_sam
         X_train, X_test = [X[i] for i in train_index], [X[i] for i in test_index] #Get training set
         Y_train, Y_test = [Y[i] for i in train_index], [Y[i] for i in test_index] #Get testing set
 
-        #Downsampling non expression samples the dataset by 1/2 to reduce dataset bias 
-        print('Dataset Labels', Counter(Y_train))
-        unique, uni_count = np.unique(Y_train, return_counts=True) 
-        rem_count = int(uni_count.max()*1/2)
+        if train_model:
+            #Downsampling non expression samples the dataset by 1/2 to reduce dataset bias 
+            print('Dataset Labels', Counter(Y_train))
+            unique, uni_count = np.unique(Y_train, return_counts=True) 
+            rem_count = int(uni_count.max()*1/2)
 
-        #Randomly remove non expression samples (With label 0) from dataset
-        rem_index = random.sample([index for index, i in enumerate(Y_train) if i==0], rem_count) 
-        rem_index += (index for index, i in enumerate(Y_train) if i>0)
-        rem_index.sort()
-        X_train = [X_train[i] for i in rem_index]
-        Y_train = [Y_train[i] for i in rem_index]
-        print('After Downsampling Dataset Labels', Counter(Y_train))
+            #Randomly remove non expression samples (With label 0) from dataset
+            rem_index = random.sample([index for index, i in enumerate(Y_train) if i==0], rem_count) 
+            rem_index += (index for index, i in enumerate(Y_train) if i>0)
+            rem_index.sort()
+            X_train = [X_train[i] for i in rem_index]
+            Y_train = [Y_train[i] for i in rem_index]
+            print('After Downsampling Dataset Labels', Counter(Y_train))
 
-        #Data augmentation to the micro-expression samples only
-        X_train, Y_train = data_augmentation(X_train, Y_train)
-        print('After Augmentation Dataset Labels', Counter(Y_train))
+            #Data augmentation to the micro-expression samples only
+            X_train, Y_train = data_augmentation(X_train, Y_train)
+            print('After Augmentation Dataset Labels', Counter(Y_train))
 
-        #Shuffle the training set
-        X_train, Y_train = shuffling(X_train, Y_train)
-        print('Done Shuffling')
+            #Shuffle the training set
+            X_train, Y_train = shuffling(X_train, Y_train)
+            print('Done Shuffling')
             
         # Initialize training dataloader
         X_train = torch.Tensor(np.array(X_train)).permute(0,3,1,2)
