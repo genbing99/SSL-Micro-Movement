@@ -27,6 +27,12 @@ Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
 
 &nbsp; <b>2c.</b> Micro-Expression Spotting
 
+&nbsp;&nbsp;&nbsp; Due to huge storage required, please download the processed optical flow of the datasets from the following links: <br>
+&nbsp;&nbsp;&nbsp; CASME_sq_dataset.pkl (5.6 GB): https://drive.google.com/file/d/13wtd9OBJ_FV4jXq5iWhFg4v8XYLlR_NX/view?usp=sharing <br>
+&nbsp;&nbsp;&nbsp; SAMMLV_dataset.pkl (21.8 GB): https://drive.google.com/file/d/1KLu0NrJ_sf9dz81ANA-ChrEszxRaIz9D/view?usp=sharing <br>
+  
+&nbsp;&nbsp;&nbsp; Place the files CASME_sq_dataset.pkl and SAMMLV_dataset.pkl under the folder dataset <br>
+  
 &nbsp; ``` python me_spot_main.py ```
 
 #### &nbsp;&nbsp;&nbsp; For parameter settings <br>
@@ -62,5 +68,9 @@ Composite_dataset.pkl : https://drive.google.com/file/d/1apjtx2hNdBiRuOXAiJDs7uC
 imigue_dataset.pkl : https://drive.google.com/file/d/1_iBbrc19fd4-UWlOpVpQzXGRcAI_f2z0/view?usp=sharing
   
  The weights for all networks are hidden (please request from the author at the moment)
+ <!--
+https://drive.google.com/file/d/1NJ8szyeG5pVRg1ab_OtFYTWPX-aCv3-z/view?usp=sharing
+-->
+  
   
 ##### Please email me at genbing67@gmail.com if you have any inquiries or issues.
