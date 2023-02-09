@@ -1,6 +1,4 @@
-# SSL_Micro-Movement
-
-Self-Supervised Micro-Expression Analysis with Facial Micro-Movementt
+## Self-Supervised Micro-Expression Analysis with Facial Micro-Movement
 
 ## How to run the code
 
