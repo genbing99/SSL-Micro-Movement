@@ -1,6 +1,6 @@
 # SSL_Micro-Movement
 
-Self-Supervised Approach by Learning Spatio-Temporal Features in Micro-Movement
+Self-Supervised Micro-Expression Analysis with Facial Micro-Movementt
 
 ## How to run the code
 
